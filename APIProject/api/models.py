@@ -1,0 +1,10 @@
+from pydoc import describe
+from django.db import models
+
+# Create your models here.
+class Article(models.Model):
+    title = models.CharField(max_length=50)
+    description = models.TextField()
+
+    def __str__(self) -> str:
+        return self.title

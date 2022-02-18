@@ -1,0 +1,30 @@
+https://www.youtube.com/watch?v=VBqJ0-imSMU&t=4344s
+
+Django Rest Framework(DRF):
+    Simple Rest apis
+    Generic/Class Basic APIView
+    ViewSets (model and generic)
+
+    Serializer (Simple and Model)
+
+    Routers for ViewSets
+
+
+React Js:
+    Creating complete crud operations in a single page
+    Create an extra file for APIService 
+    Passing function from parent as props
+
+
+Q. GenericAPIView vs ViewSets?
+Ans. In viewsets and routers we get the functions and url mapping by default, but in APIView we need to do these things mannualy. Check it out in the APIProject/api/
+
+Q. Cookies vs LocalStorage
+Ans. only client can read data from local storage and sever can only read cookies. So the question is, in your app, who needs this data — the client or the server?
+According to its answer we can decide which one we should use
+
+Q. How to solve cors request sending error from frontend?
+Ans. Use django-cors-headers library
+
+Q. How to integrate django and react to run on same port
+Ans. Create a new app frontend, copy build folder from react app to frontend app, change static files path in settings.py, create a view function, and at last map that view function with url
